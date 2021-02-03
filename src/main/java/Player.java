@@ -29,7 +29,7 @@ public class Player {
         this.playerDeck = playerDeck;
     }
 
-    public int calculatePoints(){
+    public int calculateDeckPoints(){
         int deckPoints = 0;
         for (Card card: getPlayerDeck()) {
             deckPoints+=card.getRank().getPoint();
