@@ -1,5 +1,5 @@
 public enum Rank {
-    TWO (2),
+    TWO(2),
     THREE(3),
     FOUR(4),
     FIVE(5),
@@ -8,11 +8,10 @@ public enum Rank {
     EIGHT(8),
     NINE(9),
     TEN(10),
-    JACKv(11),
+    JACK(11),
     QUEEN(12),
     KING(13),
-    ACE(14),;
-
+    ACE(14);
 
     private final int point;
 

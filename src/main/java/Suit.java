@@ -1,4 +1,4 @@
-public enum Suits {
+public enum Suit {
     DIAMOND,
     CLUB,
     HEARTH,
