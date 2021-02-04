@@ -3,19 +3,23 @@ import java.util.Collections;
 import java.util.List;
 
 public class Deck {
-    public static List<Card> getShuffledDeck(){
-        List<Card> cards = getNewDeck();
-        Collections.shuffle(cards);
-        return cards;
-    }
+    private List<Card> deck;
 
-    public static List<Card> getNewDeck(){
+    public Deck() {
         List<Card> cards = new ArrayList<>();
         for (Suit suit : Suit.values()) {
             for (Rank rank : Rank.values()) {
                 cards.add(new Card(suit, rank));
             }
         }
-        return cards;
+        this.deck = cards;
+    }
+
+    public void shuffleDeck(){
+        Collections.shuffle(deck);
+    }
+
+    public List<Card> getDeck(){
+        return deck;
     }
 }

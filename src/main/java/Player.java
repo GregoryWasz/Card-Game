@@ -8,11 +8,6 @@ public class Player {
         this.name = name;
     }
 
-    public Player(String name, List<Card> playerDeck) {
-        this.name = name;
-        this.playerDeck = playerDeck;
-    }
-
     public String getName() {
         return name;
     }
@@ -29,11 +24,4 @@ public class Player {
         this.playerDeck = playerDeck;
     }
 
-    public int calculateDeckPoints(){
-        int deckPoints = 0;
-        for (Card card: getPlayerDeck()) {
-            deckPoints+=card.getRank().getPoint();
-        }
-        return deckPoints;
-    }
 }
